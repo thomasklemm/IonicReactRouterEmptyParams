@@ -1,0 +1,7 @@
+{
+  "name": "IonicReactRouterEmptyParams",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
