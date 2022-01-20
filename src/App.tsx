@@ -47,6 +47,7 @@ const App: React.FC = () => (
           <Route exact path="/posts/:postId" component={PostPage} />
           <Route exact path="/settings" component={SettingsPage} />
           <Route exact path="/" render={() => <Redirect to="/posts" />} />
+          <Route render={() => <Redirect to="/posts" />} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="posts" href="/posts">
