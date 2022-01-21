@@ -10,6 +10,7 @@ import {
   setupIonicReact,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
+import { Switch } from "react-router";
 import { diamondOutline, cogOutline } from "ionicons/icons";
 
 // Pages
@@ -43,11 +44,13 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/posts" component={PostsPage} />
-          <Route exact path="/posts/:postId" component={PostPage} />
-          <Route exact path="/settings" component={SettingsPage} />
-          <Route exact path="/" render={() => <Redirect to="/posts" />} />
-          <Route render={() => <Redirect to="/posts" />} />
+          <Switch>
+            <Route exact path="/posts" component={PostsPage} />
+            <Route exact path="/posts/:postId" component={PostPage} />
+            <Route exact path="/settings" component={SettingsPage} />
+            <Route exact path="/" render={() => <Redirect to="/posts" />} />
+            <Route render={() => <Redirect to="/posts" />} />
+          </Switch>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="posts" href="/posts">
