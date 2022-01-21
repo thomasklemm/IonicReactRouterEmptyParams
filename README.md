@@ -10,8 +10,11 @@ Relevant commits:
 2) When using a `<Switch>` component in `<IonReactRouter>`, the issue gets remedied: [Commit 2](https://github.com/thomasklemm/IonicReactRouterEmptyParams/commit/a6f7fe368e5aab274975151ede41b83aa3e80114)
 
 Screen recording:
-
-
+<a href="https://www.loom.com/share/4c92b0ad000b4d879f7605cff7fa1d6f">
+  <p>Ionic React Router: Empty params after Fallback Redirect bug - Watch Video</p>
+  <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4c92b0ad000b4d879f7605cff7fa1d6f-with-play.gif">
+</a>
+  
 Relevant docs:
 - [Ionic React Routing: Fallback Route](https://ionicframework.com/docs/react/navigation#fallback-route)
 - [Ionic React Routing: Switches in `<IonRouterOutlet>`](https://ionicframework.com/docs/react/navigation#switches-in-ionrouteroutlet)
